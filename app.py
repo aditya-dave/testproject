@@ -103,10 +103,10 @@ fig.update_layout(
     xaxis_title="States",
     yaxis_title="Deaths",
 )
-fig.show()
+#fig.show()
 
 # Uploading on Plotly account
-py.plot(fig, filename='deaths_by_state', auto_open=True)
+#py.plot(fig, filename='deaths_by_state', auto_open=True)
 # print(tls.get_embed('https://plotly.com/~_adityadave/3/#/'))
 
 # Converting string date into datetime
@@ -126,7 +126,7 @@ fig.update_layout(
 # fig.show()
 #
 #Uploading on Plotly account
-py.plot(fig, filename='cases_by_date', auto_open=True)
+#py.plot(fig, filename='cases_by_date', auto_open=True)
 #
 
 ##############################
@@ -208,7 +208,7 @@ fig.update_layout(
 #
 # #Uploading on Plotly account
 #
-py.plot(fig, filename='dates_by_deaths', auto_open=True)
+#py.plot(fig, filename='dates_by_deaths', auto_open=True)
 #
 # #Daily Cases in USA Datewise
 data_dailyGroupedCases = data.groupby(['date'])['cases'].sum().reset_index().sort_values('cases', ascending=True)
@@ -225,4 +225,4 @@ fig.update_layout(
 )
 # #fig.show()
 #
-py.plot(fig, filename='dates_by_cases', auto_open=True)
+#py.plot(fig, filename='dates_by_cases', auto_open=True)
