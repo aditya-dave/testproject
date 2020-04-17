@@ -5,7 +5,6 @@ from apscheduler.schedulers.background import BackgroundScheduler
 import pandas as pd
 import plotly.express as px
 import chart_studio.plotly as py
-import chart_studio.tools as tls
 import chart_studio
 from pymongo import MongoClient
 from flask import Flask, render_template, url_for
