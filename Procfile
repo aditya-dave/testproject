@@ -1,1 +1,1 @@
-web: gunicorn testproject:testproject
+web: gunicorn testproject:main
