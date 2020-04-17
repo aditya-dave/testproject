@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block tabs %}
+<nav class="nav nav-pills justify-content-center">
+    <a href="{{ url_for('.index') }}" class="nav-item nav-link">Deaths By States</a>
+    <a href="{{ url_for('.casesbydate') }}" class="nav-item nav-link">Cases By Date</a>
+    <a href="{{ url_for('.activecasesbystates') }}" class="nav-item nav-link">Active Cases By States</a>
+    <a href="{{ url_for('.dailydeaths') }}" class="nav-item nav-link active">Daily Deaths</a>
+    <a href="{{ url_for('.dailycases') }}" class="nav-item nav-link">Daily Cases</a>
+</nav>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~_adityadave/29.embed" height="525" width="100%"></iframe>
+
+{% endblock %}
+
+{% block paragraph %}
+As the data source gets updated every few days, the number of deaths still remain high as shown in the graph.
+{% endblock %}

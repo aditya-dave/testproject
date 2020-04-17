@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block tabs %}
+<nav class="nav nav-pills justify-content-center">
+    <a href="{{ url_for('.index') }}" class="nav-item nav-link active">Deaths By States</a>
+    <a href="{{ url_for('.casesbydate') }}" class="nav-item nav-link">Cases By Date</a>
+    <a href="{{ url_for('.activecasesbystates') }}" class="nav-item nav-link">Active Cases By States</a>
+    <a href="{{ url_for('.dailydeaths') }}" class="nav-item nav-link">Daily Deaths</a>
+    <a href="{{ url_for('.dailycases') }}" class="nav-item nav-link">Daily Cases</a>
+</nav>
+
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~_adityadave/23.embed" height="525" width="100%"></iframe>
+
+{% endblock %}
+
+{% block paragraph %}
+New York is the most afffected state so far followed by New Jersey
+{% endblock %}

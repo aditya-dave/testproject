@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block tabs %}
+<nav class="nav nav-pills justify-content-center">
+    <a href="{{ url_for('.index') }}" class="nav-item nav-link">Deaths By States</a>
+    <a href="{{ url_for('.casesbydate') }}" class="nav-item nav-link">Cases By Date</a>
+    <a href="{{ url_for('.activecasesbystates') }}" class="nav-item nav-link active">Active Cases By States</a>
+    <a href="{{ url_for('.dailydeaths') }}" class="nav-item nav-link">Daily Deaths</a>
+    <a href="{{ url_for('.dailycases') }}" class="nav-item nav-link">Daily Cases</a>
+</nav>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~_adityadave/27.embed" height="525" width="100%"></iframe>
+
+{% endblock %}
+
+{% block paragraph %}
+
+Alabama has the most number of active cases. New York still has an overall higher number of cases but the number of active cases as of the current date of the data source is higher in Alabama.
+
+{% endblock %}
